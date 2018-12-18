@@ -1,0 +1,217 @@
+<!doctype html>
+ <html>     
+    <!--NOTES:    facebook flows on the coner -->
+   <head>
+     <!-- Author: Chunhong Lin -->
+     <title>Chun'S FUN PAGE</title>
+	 <meta name="keywords" content="smoothie,chunhong lin">
+	 <meta name="description" content="About Chunhong Lin">
+	 <meta name="viewport" content="width=device-width, initial-scale=1" />
+	 
+	  <!-- favicon-->
+<![if !IE]>
+<link rel="icon" href="https://www17.online-convert.com/dl/web2/download-file/bef2445b-dbbb-4f13-9054-63a09b490313/aries.ico" type="image/x-icon" />
+<![endif]>
+<!-- This is needed for IE -->
+<link rel="shortcut icon" href="https://www17.online-convert.com/dl/web2/download-file/bef2445b-dbbb-4f13-9054-63a09b490313/aries.ico" type="image/ico" />
+ 
+
+<!-- google font style -->	
+    <link rel="stylesheet" type="text/css"
+	      href="https://fonts.googleapis.com/css?family=Griffy|Handlee">   
+     
+<!--css styles-->	 
+	 <link rel="stylesheet" href="styles.css" />   
+
+ <!--tiny screen  -->	 
+	 <link rel="stylesheet" type="text/css"
+　　　　media="screen and (max-device-width: 400px)"
+　　　　href="tinyScreen.css" />            
+
+ <!-- small screen  -->               
+<link rel="stylesheet" type="text/css"
+　　　　media="screen and (min-width: 400px) and (max-device-width: 600px)"          
+　　　　href="smallScreen.css" />   
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5ZTKTGW');</script>
+<!-- End Google Tag Manager -->               
+
+
+<style>
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:10000px 0;}
+}
+
+.stars, .twinkling, .clouds {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars {
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:-100;
+}
+
+.twinkling{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index:-99;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+
+.clouds{
+    background:transparent url(http://pngimg.com/uploads/cloud/cloud_PNG9.png) repeat top center;
+    z-index:-98;
+
+  -moz-animation:move-clouds-back 200s linear infinite;
+  -ms-animation:move-clouds-back 200s linear infinite;
+  -o-animation:move-clouds-back 200s linear infinite;
+  -webkit-animation:move-clouds-back 200s linear infinite;
+  animation:move-clouds-back 200s linear infinite;
+}
+</style>
+<!-- Head -->
+ </head>
+ 
+ <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZTKTGW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<!-- Navbar (dropdownboxes and nav bar) -->
+<nav> 
+<!--Navbar -- Title -- website name  -->
+	<div class="dropdown">
+    <a href = "chun.html" class="title" style="  font-family: 'Handlee',serif;">ARIES</a>
+</div> 
+
+	 <!--dropdown box 1-->	 	 
+	 <div class="dropdown">
+    <div class="dropbtn"><a class= "dropbtn" href = "chun.html" style=" text-decoration:none; font-family: 'Handlee',serif;">Home</a></div>
+ 
+</div> 
+
+     <!--dropdown box2-->
+	  
+	 <div class="dropdown">
+    <div class="dropbtn"><div style="font-family: 'Handlee',serif;">&#9734Javascript</div></div>
+    <div class="dropdown-content">       
+       
+	   <a href="ingredients.html">JS Game Zone</a>
+  </div>
+</div> 
+     
+     <!--dropdown box3-->
+	  
+	 <div class="dropdown">
+    <div class="dropbtn"><div style="font-family: 'Handlee',serif;">Others</div></div>
+    <div class="dropdown-content">
+       <a href="wow.html" target="_blank">Animation</a>
+	   <a href="https://github.com/aiyayala" target = "blank">My GitHub</a>
+     </div>
+    </div> 
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+  <div style="font-family: 'Handlee',serif;">About Me</div></button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="wow.html" style="background-image: linear-gradient(to left bottom, #ffc0cb, #ffbca8, #f1c186, #c6cc77, #84d588);">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="http://i0.hdslb.com/bfs/archive/fd757542f4680a30cc8d1a85be5c8cd0a6f4b46e.jpg" type="image" alt="Avatar" class="avatar">
+    </div>
+	<!-- container under umaruL something say something -->
+    <div class="container">
+    <a>Hello! My name is Chunhong Lin. 
+	<br>I have recently graduated from SUNY Buffalo State College with a bachelor degree in Computer Information Systems. 
+	<br>I love coding escaplilly making websites!
+	<br>I like playing computer games, running, and skating.
+	<br>Skills: HTML, Javascript, CSS,SQL,Python, Java, C++,VB, Mircrosoft Excel,Mircrosoft Access,Mircrosoft Word. 
+	<br>My favorite language： Python (To be honest, not JS :P  )
+	<br>Personality: curious, energetic, upbeat, lively and passionate
+<!--  hidden portal
+	</a>
+      <button id ="hiddenportal" >What is this? It is a hidden portal! : o</button>
+    </div>  
+-->		
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>	
+  
+</nav>
+   
+<!--intro  -->	
+<div class="stars"></div>
+<div class="twinkling"></div>
+<div class="clouds"></div>
+
+<!--marquee-->	 
+	<marquee behavior="scroll" direction="right"><p>Hello World!</p></marquee>
+<!--quote-->	
+    <div id="quote" ><a>“I wonder,” he said, “whether the stars are set alight in heaven 
+    so that one day each one of us may find his own again...”<br>
+                                     ― Antoine de Saint-Exupéry</a><div>
+
+	 
+  </body>
+ </html>
