@@ -1,0 +1,216 @@
+<!doctype html>
+<html>     
+    <head>
+        <!-- Author: Chunhong Lin -->
+        <title>JS Game Zone</title>
+        <meta name="keywords" content="smoothie,chunhong lin">
+        <meta name="description" content="About Chunhong Lin">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--End author-->
+
+        <!-- favicon-->
+        <![if !IE]>
+        <link rel="icon" href="https://www17.online-convert.com/dl/web2/download-file/bef2445b-dbbb-4f13-9054-63a09b490313/aries.ico" type="image/x-icon" />
+        <![endif]>
+        <!--End favicon-->
+
+        <!-- This is needed for IE -->
+        <link rel="shortcut icon" href="https://www17.online-convert.com/dl/web2/download-file/bef2445b-dbbb-4f13-9054-63a09b490313/aries.ico" type="image/ico" />
+
+
+        <!-- google font style -->	
+        <link rel="stylesheet" type="text/css"
+              href="https://fonts.googleapis.com/css?family=Griffy|Handlee">   
+        <!--End google font style-->       
+
+        <!--css styles-->	 
+        <link rel="stylesheet" href="includes/styles.css" />   
+        <link rel="stylesheet" href="includes/starbg.css" /> 
+
+
+        <!--tiny screen  -->	 
+        <link rel="stylesheet" type="text/css"
+              media="screen and (max-device-width: 400px)"
+              href="tinyScreen.css" />            
+
+        <!-- small screen  -->               
+        <link rel="stylesheet" type="text/css"
+              media="screen and (min-width: 400px) and (max-device-width: 600px)"          
+              href="smallScreen.css" />   
+
+        <style>
+            nav{
+                margin:0;
+            }
+            form{	
+                padding:15px;
+                border:3px solid black;
+                position: relative;
+                display: inline-block;
+            }
+
+            .dualform{
+                width:40%;
+                height:450px;
+                padding: 15px;
+                margin-left: 7%;
+                margin-top: 2%;
+                float:left;
+            }
+
+            .singleform{
+                width: 90%;
+                margin-top: 2.5%;
+                margin-left: 5%;
+                height:300px;}
+
+
+            footer{
+                z-index:15;}
+
+        </style>	 	 
+    </head>
+
+    <body>
+        <!--intro  -->	
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="clouds"></div>
+
+        <!--navigations -->
+        <nav style="margin-top:-15px;"> 
+            <!--Navbar -- Title -- website name  -->
+            <div class="dropdown">
+                <a href = "chun.html" class="title">ARIES</a>
+            </div> 
+
+            <!--dropdown box1 Home-->	 	 
+            <div class="dropdown">
+                <a class= "dropbtn" href = "chun.html">Home</a> 
+            </div> 
+
+            <!--dropdown box2 Javascript-->
+
+            <div class="dropdown">
+                <span class= "dropbtn" >&#9734Javascript</span> 
+                <div class="dropdown-content">       
+                    <a href="game.html">JS Game Zone</a>
+                </div>
+            </div> 
+
+            <!--dropdown box3 others-->
+
+            <div class="dropdown">
+                <span class="dropbtn">Others</span> 
+                <div class="dropdown-content">
+                    <a href="animation.html" target="_blank">Animation</a>
+                    <a href="https://github.com/aiyayala" target = "blank">My GitHub</a>
+                </div>
+            </div> 
+
+            <!--About me button  display=block-->
+            <div class="dropdown">
+                <button id="aboutme" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+                    <span>About Me</span></button>  </div>
+
+            <div id="id01" class="modal">
+                <!--"About me container"-->
+                <div class="modal-content animate" >
+                    <!--display=none  hide the container-->
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img src="includes/signin.jpg" type="image" alt="Avatar" class="avatar">
+                    </div>
+                    <!-- container under umaruL something say something -->
+                    <div class="container">
+                        <p>Hello! My name is Chunhong Lin. 
+                            <br>I have recently graduated from SUNY Buffalo State College with a bachelor degree in Computer Information Systems. 
+                            <br>I love coding escaplilly making websites!
+                            <br>I like playing computer games, running, and skating.
+                            <br>Skills: HTML, Javascript, CSS,SQL,Python, Java, C++,VB, Mircrosoft Excel,Mircrosoft Access,Mircrosoft Word. 
+                            <br>My favorite language： Python (To be honest, not JS :P  )
+                            <br>Personality: curious, energetic, upbeat, lively and passionate
+                        </p>                       		
+                    </div>    
+                </div>
+            </div>
+            <!--End "About me" container-->             
+            <!--End navigation bar-->  
+        </nav>
+        <!--javascript-->
+        <script src=js/javascripts.js></script>
+
+
+
+        <!--slideshows container 3 images-->
+        <div class="slideshow-container">
+            <div class="mySlides fade" style="display: block;">
+                <div class="numbertext">1 / 3</div>
+                <img class = "slideimg" src="http://11points.com/wp-content/uploads/2012/09/dominatehangman-1600.jpg">
+                <div class="text">Hangman </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img class = "slideimg" src="https://image.shutterstock.com/image-illustration/cartoon-doodle-god-on-cloud-260nw-1181636137.jpg">
+                <div class="text">God's receipt</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img class = "slideimg" src="https://image.shutterstock.com/z/stock-vector-baby-coming-soon-word-cartoon-vector-illustration-1038401530.jpg">
+                <div class="text">Coming soon</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+
+        <!--center col box-->
+        <div class="content">
+
+
+            <div class="center col">
+
+                <!--background choice block--->
+                <form name="backcolor" method="post" class="dualform" action=""> Say something
+
+                </form> 
+
+                <!--end background choice block-->
+
+                <!--reveal secret block-->
+                <form class="dualform">
+                    <label>Tell me your name to reveal a secret:</label>
+                    <input type="text" id="inputname" placeholder="Your Beautiful Name*">
+                    <label id="secret"></label>
+                    <br>
+                    <button type="button" class="button btnsubmit" onclick="secrets()"><span class="btnword">Submit</span></button>           
+                </form>     
+
+                <form class="dualform"> </form>    <form class="dualform"> </form>  
+                <form class="singleform"> </form>   <form class="singleform"> </form>   <form class="singleform"> </form> 
+
+                <!--end  center col box  -->
+
+            </div> 
+            <div class="left col">
+            </div>
+            <div class="right col">
+            </div>
+        </div> 
+        <footer><div style="backcolor:white;"><img src="/includes/ms"></div></footer>
+
+
+    </body>
+</html>
