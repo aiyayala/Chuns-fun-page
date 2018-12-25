@@ -1,225 +1,266 @@
-/*header style */
-header{
-	height:100px;
-	z-index:20;
-	}
-   /* body styles*/
+/* body styles*/
 body {
-	background: linear-gradient(180deg, #000000, #000033);
-	height: 100vh;
+    background: linear-gradient(135deg, #000033,#000000);
+    height: 100vh;
+    display:inline-block;  
+    margin-top:0;
 }
- 
- /*nav bar styles */
+
+/*nav bar styles */
 nav {	
-	background-color: #000038;
+
     list-style-type: none;
-    padding: auto;
-	border-color:white;
+    padding-top:25px;
+    border-color:white;
+    background-color:rgba(0,0,56,0.6);
     overflow: none;
+    position:absolute;
+    width:100%;
+    z-index:15;
+    margin:0;
 }
 
+p {
+    /* paragraph styles  */
+    color: black;
+    font-family: 'Handlee',serif;
+}
 
-.dropbtn {
-	color: white;
-    background-color: #000038;
-    padding: 16px;
-    font-size: 22px;
-    border: none;
+.title{
+    color:white; 
+    padding-left:20px; 
+    font-size:53px;
+    text-decoration: none;
     cursor: pointer;
+    font-family: 'Handlee',serif;
 }
 
+/*dropdown: whole brick(btn + content )*/
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
+.dropbtn,
+.dropdown-content
+{
+    color: white;  
+    text-decoration:none; 
+    font-family: 'Handlee',serif;	
+    padding-left: 40px;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+}
+
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color:#ffeded;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    display: none;   /*hide the dropdown content*/
+    position: absolute;  /*inline box*/
+    min-width: 160px;    /*min-width of the boxes*/  
+    padding:20px;
 }
 
 .dropdown-content 
 a {
-    color: white;
-    padding: 12px 25px;
+    text-decoration:none;     
+    color: white;	
+    font-size:16px;
+    padding: 12px;
     text-decoration: none;
-    display: block;
-	background-color:#000038;
+    display: block;   
 }
 
-.dropdown-content a:hover {
-	background-color:#010154;
-	}
+.dropbtn:hover,
+.dropdown-content a:hover
+{
+    color:aqua;
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
-	background-color:#010154;
+    background-color:rgba(0,0,56,0.6);
+    border-radius: 10px;
+    margin-left:25px;
 }
 
-.dropdown:hover .dropbtn {
-    background-color: #000038;
+
+/*style quote little prince*/
+#quote{
+    position:absolute; 
+    color:white; 
+    margin-top:5%;
+    padding:10%;
+    font-size:3em; 
+    z-index: 4;
 }
 
 /* Set a style for all buttons */
-button {
-    background-color:#000038;
+button{  
+    text-decoration: none;
+    font-family: 'Handlee',serif;   
+    margin:4px 2px;
+    padding:16px 32px;
+    font-weight: 200;
+}
+.btnsubmit {
+    background-color:white;
+    border:2px solid aquamarine;   
+}
+.btnword{
+    color:aquamarine;
+    font-size: 16px;
+    font-weight: 900;
+}
+.btnsubmit:hover{
+    background-color:aquamarine;
+}
+.btnword:hover{
+    color:white;
+}
+
+#aboutme:hover {  
+    color: pink;
+}
+
+/*About me form*/
+#aboutme {
+    background-color:rgba(0,0,56,0);
     color: white;
-	font-size: 22px;
-    padding: 12px 16px;
+    font-size: 22px;
+    padding-left: 40px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;  			
+    width: 100%;  	
 }
 
-button:hover {  
-	color: pink;
-}
-
-p {
-  /* paragraph styles  */
-  color: white;
-}
- h1 {   
-   /* heading level 1 styles */
-
- }
-  h2 {   
-   /* heading level 2 styles */
-
- }
-  h3 {   
-   /* heading level 1 styles */
-
- }
- h5{
-	  color:green;	  
- }
-
- 
 /*Table styles*/
-  table {
-  font-family: Arial, Verdana, sans-serif;
-  margin: 5% 15% auto;
-  padding: 12%;
-  width: 70%;
-  }
-  
+table {
+    font-family: Arial, Verdana, sans-serif;
+    margin: 5% 15% auto;
+    padding: 12%;
+    width: 70%;
+}
+
 /*colum styles*/  
 th {
-  background-color: #00ace6 ;
-  color: #000000;
-  padding: 12%;
+    background-color: #00ace6 ;
+    color: #000000;
+    padding: 12%;
 }
 .evenRow {
-  background-color:#33ccff;
-  color: 000000;
-   padding: 12%; 
+    background-color:#33ccff;
+    color: 000000;
+    padding: 12%; 
 }
- .oddRow {
-   background-color: #33ccff;
-   color: 000000;
-   padding:12%; 
- } 
- 
+.oddRow {
+    background-color: #33ccff;
+    color: 000000;
+    padding:12%; 
+} 
 
 
- /*--------slideshows styles-------------*/
+
 * {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+    width: 70%;
+    position:relative;
+    margin-left:15%;
+    margin-top: 250px;
+    margin-bottom:20px;
+
 }
 
+/* Hide the images by default */
 .mySlides {
     display: none;
+    width: 100%;
+}
+.slideimg{
+    width:100%;
 }
 
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  border-color:white;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.8);
 }
+
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+    color: black;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor:pointer;
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+    background-color: #717171;
 }
 
-/* Fading animation wowme */
+/* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+    from {opacity: .4} 
+    to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+    from {opacity: .4} 
+    to {opacity: 1}
 }
 
 /*----------------------------------------------------modal log in */
@@ -234,7 +275,6 @@ input[type=text], input[type=password] {
 }
 
 
-
 /* Extra styles for the cancel button */
 .cancelbtn {
     width: auto;
@@ -247,16 +287,29 @@ input[type=text], input[type=password] {
     text-align: center;
     margin: 24px 0 12px 0;
     position: relative;
+    width:auto;
 }
-
+/* image animation*/
 img.avatar {
-    width: 40%;
-    border-radius: 50%;
+    width: 80%;  
+    animation:umaru 4s ;
+}
+@keyframes umaru
+{
+    0%{
+        width:0;
+    }
+
+    100%{
+        width:80%;
+    }	
 }
 
 .container {
+
     padding:18px;
 }
+
 
 span.psw {
     float: right;
@@ -280,10 +333,11 @@ span.psw {
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
+    background-image: linear-gradient(to left bottom, #ffc0cb, #ffbca8, #f1c186, #c6cc77, #84d588);
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
+
 }
 
 /* The Close Button (x) */
@@ -312,20 +366,8 @@ span.psw {
     from {-webkit-transform: scale(0)} 
     to {-webkit-transform: scale(1)}
 }
-    
+
 @keyframes animatezoom {
     from {transform: scale(0)} 
     to {transform: scale(1)}
 }
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
-}
- }
